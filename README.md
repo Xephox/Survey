@@ -5,8 +5,8 @@ a dynamic form where the questions can be changed in admin area.
 prototype by new year.
 
 ## Pages
-Page 1: Allow entry of ticket number.
-Page 2: Questionaire.
-Page 3: Confirmation.
-Admin area where you can enter a password to have access to change the questions and view the submitted results in a table.
+1. Allow entry of ticket number.
+2. Questionaire.
+3. Confirmation.
+4. Admin area where you can enter a password to have access to change the questions and view the submitted results in a table.
  
