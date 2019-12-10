@@ -1,6 +1,12 @@
 # Survey
-application that can be done on own device where thery can enter the number on their ticket and complete a survey and submit it. 
-email results, could display in database or table. email to be given later.
-a dynamic form where the questions can be changed. config file that returns array of the questions. a choice of questions for now, dynamic entry later.
-questions tbc later. 
+application that can be done on own device where they can enter the number of ticket and complete a survey and submit it. 
+display in table for admin. 
+a dynamic form where the questions can be changed in admin area.  
 prototype by new year.
+
+## Pages
+Page 1: Allow entry of ticket number.
+Page 2: Questionaire.
+Page 3: Confirmation.
+Admin area where you can enter a password to have access to change the questions and view the submitted results in a table.
+ 
