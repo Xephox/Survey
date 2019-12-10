@@ -1,8 +1,8 @@
 # Survey
-application that can be done on own device where they can enter the number of ticket and complete a survey and submit it. 
-display in table for admin. 
-a dynamic form where the questions can be changed in admin area.  
-prototype by new year.
+Application that can be done on own device where they can enter the number of ticket and complete a survey and submit it. 
+Display in table for admin. 
+A dynamic form where the questions can be changed in admin area.  
+Prototype by new year.
 
 ## Pages
 1. Allow entry of ticket number.
