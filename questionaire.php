@@ -1,7 +1,7 @@
 <h1>Questionaire</h1>
 <form method="post">
-<?php
-include("questions.php");
+<?php 
+file_get_contents("questions.php");
 echo $questionArray[0];
 ?>
     <label for="answer1">Answer:</label><input type=text name="answer1">
