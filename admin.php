@@ -1,3 +1,7 @@
+<?php 
+require_once("auth.php");
+?>
+
 <h1>Admin Area<h1>
 <h2>Question Editor</h2>
 
@@ -13,8 +17,9 @@
     <label for="question5">Question 5:</label>
     <input type="text" name="question5">
     <input type="submit" name=submit value="Submit">
-
-<form>
-  <input type="button" value="Log out" onclick="history.go(-2)">
 </form>
+
+    <a href="logout.php"><button>Log out</button></a>
+    <a href="index.php"><button>Home</button></a>
+
 <h2>Responses</h2>
