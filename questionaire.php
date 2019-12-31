@@ -1,23 +1,24 @@
 <h1>Questionaire</h1>
 <form method="post">
 <?php
+include("questions.php");
 echo $questionArray[0];
 ?>
-    <label for="question 1">Answer:</label><input type=text name="question 1">
+    <label for="answer1">Answer:</label><input type=text name="answer1">
 <?php
 echo $questionArray[1];
 ?>
-    <label for="question 2">Answer:</label><input type=text name="question 2">
+    <label for="answer2">Answer:</label><input type=text name="answer2">
 <?php
 echo $questionArray[2];
 ?>
-    <label for="question 3">Answer:</label><input type=text name="question 3">
+    <label for="answer3">Answer:</label><input type=text name="answer3">
 <?php
 echo $questionArray[3];
 ?>
-    <label for="question 4">Answer:</label><input type=text name="question 4">
+    <label for="answer4">Answer:</label><input type=text name="answer4">
 <?php
 echo $questionArray[4];
 ?>
-    <label for="question 5">Answer:</label><input type=text name="question 5">
+    <label for="answer5">Answer:</label><input type=text name="answer5">
     <input type="submit" name="submit" value="Submit" formaction="confirmation.php">
