@@ -1,26 +1,27 @@
-<h1>Questionaire</h1>
-<form method="post">
-
-<?php 
-
-var_dump($_POST);
-require_once("responses.php");
-
-if (isset($_POST["name"])) {
-    $responses[] = [
-        "title" => $_POST["new_question"],
-        "name" => $_POST["name"],
-    ];
-    file_put_contents('responses.php', '<?php $responses = '.var_export($responses, true).';');
-}
-?>
-
-<?php 
+<?php
 require_once("questions.php");
+session_start();
 
-foreach ($questions as $id => $question) {
-    echo "<label for='".$id."'>".$question.":</label><input type=text name='THE FUCKING THING".$id."' required>";
+if (isset($_POST["ticket_submit"])) {
+    $_SESSION['ticket'] = $_POST["ticket_submit"];
+} elseif (isset($_SESSION['ticket'])) {
+    if (isset($responses[$_SESSION['ticket']])) {
+        echo "You have already done a response";
+        die();
+    }
+} else {
+    echo "Fuck U not ticket";
+    die();
 }
 ?>
 
-    <input type="submit" name="submit" value="Submit">
+<h1>Questionaire</h1>
+
+<form action="confirmation.php" method="post">
+<?php
+foreach ($questions as $id => $question) {
+    echo "<label for='".$id."'>".$question.":</label><input type=text name='".$id."' required>";
+}
+?>
+<input type="submit" name="submit" value="Submit">
+</form>

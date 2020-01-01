@@ -1,6 +1,7 @@
 <?php 
 require_once("auth.php");
 require_once("questions.php");
+require_once("responses.php");
 
 if (isset($_POST["new_question"])) {
     $questions[rand()] = $_POST["new_question"];
@@ -29,4 +30,12 @@ if (isset($_POST["new_question"])) {
     <a href="index.php"><button>Home</button></a>
 
 <h2>Responses</h2>
+<?php
 
+foreach ($responses as $ticket_id => $awnsers) {
+        echo "<h4>Ticket $ticket_id</h4>";
+        foreach ($awnsers as $question_id => $awnser) {
+            echo $questions[$question_id]. " $awnser";
+            
+        }
+    }

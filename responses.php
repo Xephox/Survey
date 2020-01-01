@@ -1,14 +1,12 @@
 <?php $responses = array (
-  0 => 
+  5 => 
   array (
-    'ticker_id' => 'saddsadsa',
-    'awnswers' => [
-        29470450 => "hjkkhjfgjhkgfdfdg"
-    ],
+    1972522842 => 'SAm',
+    1241843104 => 'Collins',
   ),
-  1 => 
+  'Submit' => 
   array (
-    'title' => 'fghjkl',
-    'name' => '$response',
+    1972522842 => 'Sam',
+    1241843104 => 'Collins',
   ),
 );

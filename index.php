@@ -36,9 +36,17 @@ session_start();
 
     <?php endif; ?>
 
+    <?php if (!isset($_SESSION['ticket'])): ?>
+
     <p>Please select a ticket number and proceed to the questionaire.</p>
     <form method="post">
         <label for="ticket">Ticket number:</label><input type="number" name="ticket" min="1" max="99" required>
-        <input type="submit" name="submit" value="Submit" formaction="questionaire.php">  
+        <input type="submit" name="ticket_submit" value="Submit" formaction="questionaire.php">  
     </form> 
+
+    <?php else: ?>
+
+    <p>You have already submitted a request.</p>
+    
+    <?php endif; ?>
 </body>
